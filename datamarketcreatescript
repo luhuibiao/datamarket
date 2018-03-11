@@ -1,0 +1,9 @@
+/*
+指定分隔符
+create table select 不指定
+*/
+CREATE TABLE      default.inspectlastmonth
+(inpectid      bigint,checktime      string,createtime      string,hasson      string,level      string,
+  modename      string,obtainscore      double,passcnt      bigint,relativescore      double,reporttime      string,resman      string,taskname      string,totalcnt      bigint,totalscore      double,action      string,actiondescription      string,actionresult      string,actiontime      string,checkman      string,checkstandard      string,customid      bigint,customname      string,detailcheckscore      double,detaildescription      string,
+  detailid      bigint,detailstatus      string,detailupdatetime      string,orgid      bigint,orglevelname      string,orgname      string,orgtypename      string,standard      string,standardscore      double,status      string,taskid      bigint)    row format delimited  fields terminated by ',';
+

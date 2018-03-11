@@ -1,0 +1,36 @@
+ -- inspect
+ bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 4g      --class datamarket.inspect   /data/tydata/out/artifacts/inspect_jar/tydata.jar
+hbase inspect 表的 rowkey 按照
+customid,年,上个月,taskid 拼接而成
+
+
+--  onlinerate    上线率
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 4g      --class datamarket.onlinerate   /data/tydata/out/artifacts/onlinerate_jar/tydata.jar
+
+2018  02 01
+
+--  alarmhandle
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 4g      --class datamarket.alarmhandle   /data/tydata/out/artifacts/alarmhandle_jar/tydata.jar
+
+
+--  alarmreply
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 4g      --class datamarket.alarmreply   /data/tydata/out/artifacts/alarmreply_jar/tydata.jar
+
+
+
+-- deploywithdraw
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 4g      --class datamarket.deploywithdraw   /data/tydata/out/artifacts/deploywithdraw_jar/tydata.jar
+
+
+-- deploystatus
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 4g      --class datamarket.deploystatus   /data/tydata/out/artifacts/deploystatus_jar/tydata.jar
+
+
+
+--  daycustomhealthy
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 6g      --class datamarket.daycustomhealthy   /data/tydata/out/artifacts/daycustomhealthy_jar/tydata.jar
+
+
+
+--  test
+bin/spark-submit --master spark://192.168.11.21:7077    --executor-memory 4g      --class datamarket.test   /data/tydata/out/artifacts/test_jar/tydata.jar
